@@ -52,6 +52,14 @@ function homePage() {
     locationDiv.classList.add('location'); 
     mainImageDiv.appendChild(locationDiv); 
 
+    //location text 
+    const locationText = document.createElement('div'); 
+    locationText.classList.add('location-text'); 
+    locationText.innerHTML = `<h1><u>Hours &amp; Location</u></h1><br><br><span><b>Tuesday-Sunday</b></span><br><br><span><b>Dinner:</b> 5pm to 10pm</span><br><br><span><b>Breakfast: </b> 7:30am to 10:30am</span><br><br><span><b>Lunch:</b> 12pm to 2:30PM (Thursday & Friday only)</span><br><br><span><b>Weekend Brunch:</b> 10am to 2:30pm</span>
+
+    `
+    locationDiv.appendChild(locationText); 
+
     function initMap() {
         const mapDiv= document.createElement('div'); 
         mapDiv.classList.add('map'); 
