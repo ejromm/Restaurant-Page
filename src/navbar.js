@@ -1,4 +1,7 @@
-
+import { homePage } from './homepage.js'; 
+import { aboutPage } from './about.js'; 
+import { menuPage } from './menu.js';
+import { contactPage } from './contact.js'; 
 function createNav() {
     const container = document.querySelector('#content'); 
 
@@ -38,6 +41,63 @@ function createNav() {
     navThree.textContent = 'CONTACT'; 
 
     navBar.append(navZero,navOne, navTwo, navThree); 
+
+
+    const contentContainer = document.querySelector('.content-container')
+const homeBtn = document.getElementById('home-btn'); 
+const aboutBtn = document.getElementById('about-btn'); 
+const menuBtn = document.getElementById('menu-btn'); 
+const contactBtn = document.getElementById('contact-btn'); 
+let currentPage = 'home'; 
+homeBtn.addEventListener('click', function() {
+console.log(currentPage); 
+
+if(currentPage === 'home') {
+    return; 
+} else {
+    currentPage = 'home';
+    contentContainer.innerHTML = ''; 
+    homePage(); 
+}
+
+console.log(currentPage); 
+})
+
+aboutBtn.addEventListener('click', function() {
+    console.log(currentPage);
+    if(currentPage === 'about') {
+        return; 
+    } else  {
+           currentPage = 'about'; 
+           contentContainer.innerHTML = '';  
+           aboutPage();
+        }
+    
+
+
+   console.log(currentPage); 
+ }); 
+
+menuBtn.addEventListener('click', function() {
+console.log(currentPage); 
+if (currentPage === 'menu') {
+    return; 
+} else {
+    currentPage = 'menu'; 
+    contentContainer.innerHTML = '';  
+    menuPage(); 
+}
+}); 
+
+contactBtn.addEventListener('click', function() {
+    if(currentPage === 'contact') {
+        return
+    } else {
+        currentPage = 'contact';
+        contentContainer.innerHTML = ''; 
+        contactPage(); 
+    }
+}); 
     
 }; 
 

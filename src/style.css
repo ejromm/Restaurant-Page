@@ -112,14 +112,14 @@ body {
 }
 .about-header {
     flex-shrink: 0;
-    height: 15%;
+    height: 20%;
     width: 80%;
     font-size: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid gray;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'europa', sans-serif;
     font-weight: 700;
    
     
@@ -164,7 +164,7 @@ body {
 .menu-item {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 40%;
     height: 35vh;
     margin-top: 1%;
     margin-bottom: 1%;
@@ -272,6 +272,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 50%;
+    height: 100%;
    
 }
 .menu-five-header {
@@ -284,4 +286,63 @@ body {
     align-items: flex-start; 
     justify-content: flex-start;
     margin-left: 5%;
+}
+/* contact page div */
+.contact-div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+.contact-header {
+    height: 20%;
+    width: 80%;
+    border-bottom: 1px solid gray;
+    font-family: 'europa', sans-serif; 
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    height: auto; 
+    border-bottom: 1px solid gray;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.contact-text h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'europa', sans-serif;
+    font-weight: 400;
+}
+.contact-text p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+.contact-text b {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
 }
