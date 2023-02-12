@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=Fugaz+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600;1,6..96,700;1,6..96,800;1,6..96,900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Fugaz+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Varela+Round&display=swap');
 * {
     width: 100%;
     height: 100%;
@@ -65,9 +65,11 @@ body {
 #content {
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 .content-container {
     height: 80%;
+    overflow: scroll;
 }
 /* create all of the homepage content stylings */
 .main-content {
@@ -147,4 +149,139 @@ body {
     width: 20%;
     height: 80%;
    
+}
+/* menu page stylings*/
+.menu-div {
+   height: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 5%;
+   padding-bottom: 5%;
+}
+
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 35vh;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    
+}
+
+.menu-img {
+    width: 50%;
+    height: 100%;
+}
+.menu-one-text {
+    width: 50%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.menu-header {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 80%;
+    height: 20%;
+    margin-left: 5%;
+}
+.menu-one-times {
+    font-style: italic;
+    font-size: 2rem;
+    width: 80%;
+    height: 20%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.menu-one-desc {
+    width: 80%;
+    height: 10%;
+    margin-left: 5%;
+    font-style: italic;
+}
+.menu-one-btn {
+    height: 15%;
+    border: 2px solid black;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-left: 5%;
+    background-color: #f4f1de;
+}
+.menu-one-btn:hover {
+    background-color: black;
+    color: white;
+}
+.menu-two-btn:hover {
+    background-color: black;
+    color: white;
+}
+.menu-three-btn:hover {
+    background-color: black;
+    color: white;
+}
+.menu-four-btn:hover {
+    background-color: black;
+    color: white;
+}
+.menu-two-text, .menu-three-text, .menu-four-text, .menu-six-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+.menu-two-header, .menu-three-header, .menu-four-header, .menu-six-header {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ .menu-two-btn, .menu-three-btn, .menu-four-btn, .menu-six-btn {
+    height: 15%;
+    border: 2px solid black;
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: #f4f1de;
+}
+.menu-five-btn-1, .menu-five-btn-2 {
+    font-style: italic;
+    text-decoration: underline;
+    height: 10%;
+    width: 40%;
+    font-size: 1rem;
+    margin-left: 5%;
+}
+.menu-five-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+.menu-five-header {
+    font-family: 'EB Garamond', sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    width: 40%;
+    height: 20%;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: flex-start;
+    margin-left: 5%;
 }

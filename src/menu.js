@@ -10,7 +10,7 @@ function menuPage() {
  
     const container = document.querySelector('#content'); 
     const contentContainer = document.querySelector('.content-container'); 
-    //create menu div 
+    //create menu div and item container
     const menuDiv = document.createElement('div'); 
     menuDiv.classList.add('menu-div'); 
     contentContainer.appendChild(menuDiv); 
@@ -58,22 +58,22 @@ function menuPage() {
     menuSixImg.classList.add('menu-img'); 
 
     const menuOneText = document.createElement('div'); 
-    menuOneText.classList.add('menu-text'); 
+    menuOneText.classList.add('menu-one-text'); 
 
     const menuTwoText = document.createElement('div'); 
-    menuOneText.classList.add('menu-text'); 
+    menuTwoText.classList.add('menu-two-text'); 
 
     const menuThreeText = document.createElement('div'); 
-    menuOneText.classList.add('menu-text'); 
+    menuThreeText.classList.add('menu-three-text'); 
 
     const menuFourText = document.createElement('div'); 
-    menuOneText.classList.add('menu-text'); 
+    menuFourText.classList.add('menu-four-text'); 
 
     const menuFiveText = document.createElement('div'); 
-    menuOneText.classList.add('menu-text'); 
+    menuFiveText.classList.add('menu-five-text'); 
 
     const menuSixText = document.createElement('div'); 
-    menuOneText.classList.add('menu-text'); 
+    menuSixText.classList.add('menu-six-text'); 
 
     // append all images and text divs to corresponding item divs
     menuItemOne.append(menuOneImg, menuOneText); 
@@ -83,8 +83,74 @@ function menuPage() {
     menuItemFive.append(menuFiveImg, menuFiveText); 
     menuItemSix.append(menuSixText, menuSixImg); 
 
+    // add text and buttons to all text divs
+    //div one
+    const menuOneHeader = document.createElement('div');
+    menuOneText.appendChild(menuOneHeader); 
+    menuOneHeader.classList.add('menu-header');
+    menuOneHeader.innerHTML = 'VALENTINE\'S DAY<br>DINNER';
+    const menuOneTimes = document.createElement('div'); 
+    menuOneTimes.classList.add('menu-one-times'); 
+    menuOneText.appendChild(menuOneTimes); 
+    menuOneTimes.textContent = '5-10pm'
+    const menuOneDescription = document.createElement('div'); 
+    menuOneDescription.classList.add('menu-one-desc');
+    menuOneText.appendChild(menuOneDescription); 
+    menuOneDescription.textContent = 'Four-course menu, $195'; 
+    const menuoneBtn = document.createElement('button'); 
+    menuoneBtn.classList.add('menu-one-btn'); 
+    menuoneBtn.textContent = 'VIEW MENU'
+    menuOneText.appendChild(menuoneBtn);
   
+    //div two
+    const menuTwoHeader = document.createElement('div'); 
+    menuTwoHeader.classList.add('menu-two-header'); 
+    menuTwoHeader.textContent = 'LUNCH'
+    menuTwoText.appendChild(menuTwoHeader); 
+    const menuTwoButton = document.createElement('button'); 
+    menuTwoButton.classList.add('menu-two-btn'); 
+    menuTwoButton.textContent = 'VIEW MENU'; 
+    menuTwoText.appendChild(menuTwoButton); 
     
+    // div three
+    const menuThreeHeader = document.createElement('div'); 
+    menuThreeHeader.classList.add('menu-three-header'); 
+    menuThreeHeader.textContent = 'DINNER'
+    menuThreeText.appendChild(menuThreeHeader); 
+    const menuThreeButton = document.createElement('button'); 
+    menuThreeButton.classList.add('menu-three-btn'); 
+    menuThreeButton.textContent = 'VIEW MENU'; 
+    menuThreeText.appendChild(menuThreeButton); 
+    //div four 
+    const menuFourHeader = document.createElement('div'); 
+    menuFourHeader.classList.add('menu-four-header'); 
+    menuFourHeader.textContent = 'DESSERT'
+    menuFourText.appendChild(menuFourHeader); 
+    const menuFourButton = document.createElement('button'); 
+    menuFourButton.classList.add('menu-four-btn'); 
+    menuFourButton.textContent = 'VIEW MENU'; 
+    menuFourText.appendChild(menuFourButton);
+    // dive five
+    const menuFiveHeader = document.createElement('div'); 
+    menuFiveHeader.classList.add('menu-five-header'); 
+    menuFiveHeader.textContent = 'BAR'
+    menuFiveText.appendChild(menuFiveHeader); 
+    const menuFiveBtnOne = document.createElement('a'); 
+    const menuFiveBtnTwo = document.createElement('a'); 
+    menuFiveBtnOne.classList.add('menu-five-btn-1');  
+    menuFiveBtnTwo.classList.add('menu-five-btn-1'); 
+    menuFiveBtnOne.textContent = 'Menu'
+    menuFiveBtnTwo.textContent = 'Cocktails'
+    menuFiveText.append(menuFiveBtnOne, menuFiveBtnTwo); 
+    //div six
+    const menuSixHeader = document.createElement('div'); 
+    menuSixHeader.classList.add('menu-six-header'); 
+    menuSixHeader.textContent = 'WINE LIST'
+    menuSixText.appendChild(menuSixHeader); 
+    const menuSixButton = document.createElement('button'); 
+    menuSixButton.classList.add('menu-six-btn'); 
+    menuSixButton.textContent = 'VIEW LIST'; 
+    menuSixText.appendChild(menuSixButton);
 }
 
 
