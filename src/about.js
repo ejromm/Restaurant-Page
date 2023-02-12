@@ -3,15 +3,16 @@ import Icon3 from './images/finedining2.jpeg';
 import Icon4 from './images/finedinging3.jpeg'; 
 import Icon5 from './images/finedining4.jpeg'; 
 
-import { createNav } from './navbar';
+
 function aboutPage() {
 
-createNav();  
+  
 const container = document.querySelector('#content'); 
+const contentContainer = document.querySelector('.content-container'); 
 //create about div
 const aboutDiv = document.createElement('div'); 
 aboutDiv.classList.add('about-div'); 
-container.appendChild(aboutDiv); 
+contentContainer.appendChild(aboutDiv); 
 
 //create about header
 const aboutHeader = document.createElement('div'); 

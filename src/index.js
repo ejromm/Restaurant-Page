@@ -5,9 +5,11 @@ import { createNav } from './navbar';
 import { menuPage } from './menu';
  
 
-
+createNav(); 
 homePage(); 
 const container = document.querySelector('#content');
+
+const contentContainer = document.querySelector('.content-container')
 const homeBtn = document.getElementById('home-btn'); 
 const aboutBtn = document.getElementById('about-btn'); 
 const menuBtn = document.getElementById('menu-btn'); 
@@ -20,7 +22,7 @@ if(currentPage === 'home') {
     return; 
 } else {
     currentPage = 'home';
-    container.innerHTML = ''; 
+    contentContainer.innerHTML = ''; 
     homePage(); 
 }
 
@@ -33,7 +35,7 @@ aboutBtn.addEventListener('click', function() {
         return; 
     } else  {
            currentPage = 'about'; 
-           container.innerHTML = '';  
+           contentContainer.innerHTML = '';  
            aboutPage();
         }
     
@@ -48,7 +50,7 @@ if (currentPage === 'menu') {
     return; 
 } else {
     currentPage = 'menu'; 
-    container.innerHTML = '';  
+    contentContainer.innerHTML = '';  
     menuPage(); 
 }
 

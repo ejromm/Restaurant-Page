@@ -66,9 +66,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+.content-container {
+    height: 80%;
+}
 /* create all of the homepage content stylings */
 .main-content {
-    height: 80%;
+    height: 100%;
     width: 100%;
     overflow: scroll;
     scroll-snap-type: mandatory;
@@ -96,7 +99,7 @@ body {
 }
 /*create about page stylings */
 .about-div {
-    height: 80%;
+    height: 100%;
     width: 100%;
     overflow: scroll;
     display: flex; 

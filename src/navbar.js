@@ -5,7 +5,7 @@ function createNav() {
     //create navbar and navbar elements
     const header = document.createElement('div'); 
     header.classList.add('header'); 
-    container.appendChild(header); 
+    container.prepend(header); 
 
     const navBar = document.createElement('nav'); 
     navBar.classList.add('nav-bar'); 

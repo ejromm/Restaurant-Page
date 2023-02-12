@@ -5,15 +5,15 @@ import Icon9 from './images/menuimg4.jpeg';
 import Icon10 from './images/menuimg5.png'; 
 import Icon11 from './images/menuimg6.jpeg'; 
 
-import { createNav } from './navbar';
-function menuPage() {
-     createNav(); 
-    const container = document.querySelector('#content'); 
 
+function menuPage() {
+ 
+    const container = document.querySelector('#content'); 
+    const contentContainer = document.querySelector('.content-container'); 
     //create menu div 
     const menuDiv = document.createElement('div'); 
     menuDiv.classList.add('menu-div'); 
-    container.appendChild(menuDiv); 
+    contentContainer.appendChild(menuDiv); 
 
     // create six divs for each menu 
     const menuItemOne = document.createElement('div'); 
