@@ -1,10 +1,11 @@
 
 import Icon from './images/Carne-Mare-Read-McKendree.jpeg';
 
+import { createNav } from './navbar';
 // create homepage
 function homePage() {
    
-
+    createNav(); 
     const container = document.querySelector('#content')
     const mainImageDiv = document.createElement('div'); 
     mainImageDiv.classList.add('main-content'); 

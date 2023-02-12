@@ -1,3 +1,4 @@
+
 function createNav() {
     const container = document.querySelector('#content'); 
 
@@ -37,6 +38,9 @@ function createNav() {
     navThree.textContent = 'CONTACT'; 
 
     navBar.append(navZero,navOne, navTwo, navThree); 
+    
 }; 
+
+
 
 export { createNav }; 
