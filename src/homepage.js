@@ -1,42 +1,11 @@
 
-import Icon from './Carne-Mare-Read-McKendree.jpeg';
+import Icon from './images/Carne-Mare-Read-McKendree.jpeg';
 
 // create homepage
 function homePage() {
-    // create variable for container 
-    const container = document.querySelector('#content'); 
+   
 
-    //create navbar and navbar elements
-    const header = document.createElement('div'); 
-    header.classList.add('header'); 
-    container.appendChild(header); 
-
-    const navBar = document.createElement('nav'); 
-    navBar.classList.add('nav-bar'); 
-    const logo = document.createElement('div'); 
-    logo.classList.add('header-logo'); 
-
-    header.appendChild(logo); 
-    header.appendChild(navBar); 
-
-    logo.textContent = 'RESTAURANT.';
-
-    const navOne = document.createElement('a'); 
-    const navTwo = document.createElement('a'); 
-    const navThree = document.createElement('a'); 
-
-    navOne.classList.add('nav-element'); 
-    navTwo.classList.add('nav-element'); 
-    navThree.classList.add('nav-element'); 
-
-    navOne.textContent = 'ABOUT'; 
-    navTwo.textContent = 'MENU'; 
-    navThree.textContent = 'CONTACT'; 
-
-    navBar.append(navOne, navTwo, navThree); 
-
-    // main content
-
+    const container = document.querySelector('#content')
     const mainImageDiv = document.createElement('div'); 
     mainImageDiv.classList.add('main-content'); 
     container.appendChild(mainImageDiv); 
@@ -55,9 +24,7 @@ function homePage() {
     //location text 
     const locationText = document.createElement('div'); 
     locationText.classList.add('location-text'); 
-    locationText.innerHTML = `<h1><u>Hours &amp; Location</u></h1><br><br><span><b>Tuesday-Sunday</b></span><br><br><span><b>Dinner:</b> 5pm to 10pm</span><br><br><span><b>Breakfast: </b> 7:30am to 10:30am</span><br><br><span><b>Lunch:</b> 12pm to 2:30PM (Thursday & Friday only)</span><br><br><span><b>Weekend Brunch:</b> 10am to 2:30pm</span>
-
-    `
+    locationText.innerHTML = `<h1><u>Hours &amp; Location</u></h1><br><br><span><b>Tuesday-Sunday</b></span><br><br><span><b>Dinner:</b> 5pm to 10pm</span><br><br><span><b>Breakfast: </b> 7:30am to 10:30am</span><br><br><span><b>Lunch:</b> 12pm to 2:30PM (Thursday & Friday only)</span><br><br><span><b>Weekend Brunch:</b> 10am to 2:30pm</span>`; 
     locationDiv.appendChild(locationText); 
 
     function initMap() {

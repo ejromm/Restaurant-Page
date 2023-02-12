@@ -66,6 +66,7 @@ body {
     display: flex;
     flex-direction: column;
 }
+/* create all of the homepage content stylings */
 .main-content {
     height: 80%;
     width: 100%;
@@ -92,6 +93,55 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
+}
+/*create about page stylings */
+.about-div {
+    height: 80%;
+    width: 100%;
+    overflow: scroll;
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+   
+   
+}
+.about-header {
+    flex-shrink: 0;
+    height: 15%;
+    width: 80%;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+   
+    
+}
+.about-text {
+    flex-shrink: 0;
+    font-size: 1.8rem;
+    height: 80%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    font-family: 'Montserrat', sans-serif;
+}
+.about-images {
+    flex-shrink: 0;
+    height: 50%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2%; 
+}
+.about-img {
+    width: 20%;
+    height: 80%;
    
 }
